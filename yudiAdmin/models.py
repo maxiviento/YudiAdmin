@@ -1,5 +1,5 @@
 from django.db import models
-#from django_mysql.models import JSONField
+from django_mysql.models import JSONField
 
 
 class Persona(models.Model):
@@ -55,10 +55,13 @@ class Parseo(models.Model):
     def __str__(self):
         return self.nombre
 
+def my_default():
+    return {'foo': 'bar'}
+
 class Contacto_parseo(models.Model):
     contacto = models.CharField(max_length=20, default = "")
     id_parseo =  models.ForeignKey(Parseo, default = "", on_delete=models.CASCADE)
-    #chat = models.JSONField()
+    chat = JSONField(default=my_default)
     def __str__(self):
         return self.contacto
 
