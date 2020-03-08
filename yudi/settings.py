@@ -76,10 +76,6 @@ WSGI_APPLICATION = 'yudi.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    #'default': {
-    #    'ENGINE': 'django.db.backends.sqlite3',
-    #    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    #}
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'yudi',
@@ -93,7 +89,7 @@ DATABASES = {
         'COLLATION':'utf8mb4_unicode_ci',
         },
         'USER': 'root',
-        'PASSWORD': 'N0r3cu3rd0=',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
         }
