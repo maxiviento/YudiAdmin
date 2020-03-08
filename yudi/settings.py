@@ -89,8 +89,8 @@ DATABASES = {
         },
         # Tell Django to build the test database with the 'utf8mb4' character set
         'TEST': {
-        'CHARSET': 'utf8mb4',
-        'COLLATION': 'utf8mb4_unicode_ci',
+        'CHARSET':'utf8mb4',
+        'COLLATION':'utf8mb4_unicode_ci',
         },
         'USER': 'root',
         'PASSWORD': 'N0r3cu3rd0=',
@@ -122,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-ar'
 
 TIME_ZONE = 'UTC'
 
